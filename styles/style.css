@@ -60,7 +60,7 @@
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .center-btn {
@@ -184,13 +184,12 @@ section {
 
 .skill-container {
     display: flex;
+    gap: 30px;
 
 }
 
 .skill-content {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #FD6E0A;
+    padding: 30px;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -256,4 +255,46 @@ section {
 
 .resume-contain {
     margin: 30px 0;
+}
+
+
+/* Footer Section Style */
+.footer-bg {
+    background-color: #FFF8F3;
+    padding: 130px 0;
+}
+
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+
+}
+
+.footer-box {
+    max-width: 50%;
+}
+
+.footer-title {
+    color: #181818;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    color: #474747;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+.social-links>a {
+    padding-right: 20px;
 }
