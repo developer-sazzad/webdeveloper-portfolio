@@ -6,8 +6,6 @@
 
 }
 
-
-
 .btn-primary {
     padding: 15px 30px;
     background-color: #FD6E0A;
@@ -114,10 +112,10 @@ nav a {
 /* Header Releted Styles */
 .header {
     background-color: #fce2cf;
-    background-image: url('/images/header_bg.png');
+    background-image: url('/images/header_bg.png'), url('/images/developer.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 
