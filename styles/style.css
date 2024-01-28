@@ -14,16 +14,20 @@
     font-size: 20px;
     border-radius: 4px;
     font-weight: 700;
+    border: 2px solid #FD6E0A;
+
 }
 
 .btn-primary:hover {
     background-color: #0000ff;
     text-decoration: underline;
+    border: 2px solid #0000ff;
+
 }
 
 .btn-border {
     padding: 13px 30px;
-    border: 3px solid #FD6E0A;
+    border: 2px solid #FD6E0A;
     font-size: 20px;
     border-radius: 4px;
     font-weight: 700;
@@ -33,7 +37,7 @@
 .btn-border:hover {
     background-color: #0000ff;
     text-decoration: underline;
-    border: 3px solid #0000ff;
+    border: 2px solid #0000ff;
 }
 
 .btn-border a {
@@ -61,9 +65,9 @@
 .section-title {
     color: #181818;
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .section-description {
@@ -72,6 +76,8 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 50px;
+    padding: 30px 150px;
+
 }
 
 .center-btn {
@@ -127,7 +133,7 @@ nav a {
 }
 
 .banner-content {
-    max-width: 500px;
+    width: 500px;
 }
 
 .banner-getting {
@@ -265,14 +271,14 @@ section {
 }
 
 .resume-contain {
-    margin: 30px 0;
+    margin: 30px 0px;
 }
 
 
 /* Footer Section Style */
 .footer-bg {
     background-color: #FFF8F3;
-    padding: 130px 0;
+    padding: 130px 0px;
 }
 
 .footer {
@@ -284,7 +290,7 @@ section {
 }
 
 .footer-box {
-    max-width: 50%;
+    width: 50%;
 }
 
 .footer-title {
@@ -317,7 +323,7 @@ textarea {
     display: block;
     padding: 16px 30px;
     margin-bottom: 25px;
-    width: 100%;
+    width: calc(100% - 60px);
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -332,11 +338,193 @@ textarea {
     font-weight: 700;
     border-radius: 5px;
     background-color: #FD6E0A;
-
 }
 
 .contact-us input[type="submit"]:hover {
     background-color: #0000ff;
     text-decoration: underline;
 
+}
+
+/* Responsive Style */
+.hide {
+    display: none;
+}
+
+/* Responsive For Mobile Device */
+@media screen and (max-width: 576px) {
+
+    /* About Section Responsive */
+    .about {
+        margin-top: 50px;
+        padding: 30px;
+    }
+
+    nav {
+        margin: 0 30px;
+    }
+
+    .header {
+        background-image: url('/images/header_bg.png');
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .btn-primary {
+        margin-right: 20px;
+    }
+
+    .btn-primary,
+    .btn-border {
+        font-size: 12px;
+        padding: 10px 14px;
+        margin-left: 0;
+        width: calc((100% - 50px)/2);
+    }
+
+
+    .hardy-image img {
+        width: 200px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    nav,
+    .about-info-container,
+    .footer {
+        flex-direction: column;
+    }
+
+    .about-info {
+        margin-bottom: 30px;
+    }
+
+    /* Skill Section Responsive */
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-description {
+        padding: 15px;
+    }
+
+    /* Resume Section Responsive */
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .resume-box {
+        width: calc(100% - 50px);
+        flex: 1;
+        padding: 0;
+        margin: 25px;
+    }
+
+    .footer-box {
+        width: calc(100% - 60px);
+        padding: 30px;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .header {
+        background-image: none;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    nav {
+        margin: 0 30px;
+    }
+
+    .header {
+        background-image: url('/images/header_bg.png');
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .btn-primary {
+        margin-right: 20px;
+    }
+
+    .btn-primary,
+    .btn-border {
+        font-size: 12px;
+        padding: 10px 14px;
+        margin-left: 0;
+        width: calc((100% - 50px)/2);
+    }
+
+
+    .hardy-image img {
+        width: 100%;
+
+
+    }
+
+
+    /* About Section */
+    .about {
+        margin-top: 50px;
+        padding: 30px;
+    }
+
+    .about-info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .about-info {
+        margin-bottom: 30px;
+    }
+
+    /* Skill Section for Tablet */
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-description {
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        width: calc(100% - 60px);
+        padding: 30px;
+    }
 }
